@@ -1,0 +1,21 @@
+:root {
+    --color1: #0d3b66;
+    --color2: #4fb3bf;
+    --color3: #ffc857;
+    --bg-color1: #e0f2f1;
+    --bg-color2: #b2dfdb;
+    --font-family: 'Lato', sans-serif;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+  
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--bg-color1);
+  }
+  

@@ -19,7 +19,17 @@
 body {
   background-color: var(--bg-color1);
 }
-
+.welcome-screen {
+  background-image: url('/src/images/bg-image.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 h1 {
   font-size: 5rem;
   color: #fff;
@@ -27,6 +37,23 @@ h1 {
   border: solid;
   border-radius: 15%;
   background-color: var(--primary-color);
+}
+#enter-button {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  border-radius: 50px;
+  transition: background-color 0.5s, transform 0.2s ease-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#enter-button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 button {

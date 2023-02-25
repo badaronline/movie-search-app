@@ -1,7 +1,7 @@
 import { IMG_PATH } from "../utilities/constants.js";
 import { movieBox } from "../utilities/dom.js";
 // Function to display movies on the webpage
-const displayMovies = (movies) => {
+export const displayMovies = (movies) => {
   movieBox.innerHTML = "";
   movies.forEach((movie) => {
     const imagePath = movie.poster_path ? IMG_PATH + movie.poster_path : "/src/images/image-missing.png";
@@ -21,5 +21,3 @@ const displayMovies = (movies) => {
     movieBox.insertAdjacentHTML("beforeend", box);
   });
 };
-
-export { displayMovies };

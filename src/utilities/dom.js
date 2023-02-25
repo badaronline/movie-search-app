@@ -2,7 +2,6 @@
 export const movieBox = document.querySelector("#movie-box");
 export const searchInput = document.querySelector("#search");
 export const homeButton = document.querySelector("#home-button");
-// const popularButton = document.querySelector("#popular-button");
 export const topRatedButton = document.querySelector("#top-rated-button");
 export const upcomingButton = document.querySelector("#upcoming-button");
 export const enterButton = document.querySelector("#enter-button");

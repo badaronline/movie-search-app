@@ -1,4 +1,6 @@
-import { fetchMovies } from "./utilities/fetchMovies.js";
+import { handleEnter } from "./pages/handleEnter.js";
+import { enterButton } from "./utilities/dom.js";
+
 window.addEventListener('load', () => {
-    fetchMovies();
+  enterButton.addEventListener("click", handleEnter);
   });

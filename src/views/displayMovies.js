@@ -1,9 +1,11 @@
 import { IMG_PATH } from "../utilities/constants.js";
-import { movieBox } from "../utilities/dom.js";
 // Function to display movies on the webpage
-export const displayMovies = (movies) => {
-  movieBox.innerHTML = "";
-  movies.forEach((movie) => {
+export const displayMovies = (movies, element) => {
+  if (movies.length === 0) {
+    element.innerHTML = "No movie found. Please search another movie name.";
+  } else {
+  element.innerHTML = "";
+   movies.forEach((movie) => {
     const imagePath = movie.poster_path ? IMG_PATH + movie.poster_path : "/src/images/image-missing.png";
     const box = `
       <div class="box">
@@ -18,6 +20,7 @@ export const displayMovies = (movies) => {
         </div>
       </div>
     `;
-    movieBox.insertAdjacentHTML("beforeend", box);
+    element.insertAdjacentHTML("beforeend", box);
   });
+  }
 };  

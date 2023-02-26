@@ -1,8 +1,11 @@
+import { handleSearch } from "../pages/handleSearch.js";
+import { handleHome } from "../pages/handleHome.js";
+import { handleTopRated } from "../pages/handleTopRated.js";
+import { handleUpcoming } from "../pages/handleUpcoming.js";
 export const createMainScreen = () => {
   const main = document.createElement("div");
   main.classList.add("main");
   main.id = "main";
-  // main.style.display = 'none';
 
   const buttonContainer = document.createElement("div");
   buttonContainer.classList.add("button-container");
@@ -10,18 +13,20 @@ export const createMainScreen = () => {
   const homeButton = document.createElement("button");
   homeButton.textContent = "Home";
   homeButton.id = "home-button";
+  homeButton.addEventListener("click", handleHome);
   buttonContainer.appendChild(homeButton);
 
   const topRatedButton = document.createElement("button");
   topRatedButton.textContent = "Top Rated Movies";
   topRatedButton.id = "top-rated-button";
+  topRatedButton.addEventListener("click", handleTopRated);
   buttonContainer.appendChild(topRatedButton);
 
   const upcomingButton = document.createElement("button");
   upcomingButton.textContent = "Upcoming Movies";
   upcomingButton.id = "upcoming-button";
+  upcomingButton.addEventListener("click", handleUpcoming); 
   buttonContainer.appendChild(upcomingButton);
-
   main.appendChild(buttonContainer);
 
   const searchContainer = document.createElement("div");
@@ -34,7 +39,7 @@ export const createMainScreen = () => {
   searchInput.autofocus = true;
   searchInput.autocomplete = "off";
   searchInput.placeholder = "Search here...";
-
+  searchInput.addEventListener("keyup", handleSearch);
   searchContainer.appendChild(searchInput);
   main.appendChild(searchContainer);
 

@@ -1,6 +1,5 @@
 import { handleEnter } from "./pages/handleEnter.js";
-import { enterButton } from "./utilities/dom.js";
-
 window.addEventListener('load', () => {
+  const enterButton = document.getElementById("enter-button");
   enterButton.addEventListener("click", handleEnter);
   });

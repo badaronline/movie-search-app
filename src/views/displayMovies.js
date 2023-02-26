@@ -20,4 +20,4 @@ export const displayMovies = (movies) => {
     `;
     movieBox.insertAdjacentHTML("beforeend", box);
   });
-};
+};  

@@ -9,7 +9,6 @@ export const handleSearch = async () => {
     const searchURL = `${API_URL}search/movie?api_key=${API_KEY}&query=${searchQuery}`;
     if (searchQuery) {
       await fetchMovies(searchURL);
-      displayMovies(data.results);
     } else {
       await fetchMovies(`${API_URL}discover/movie?sort_by=popularity.desc&api_key=${API_KEY}`);
     }

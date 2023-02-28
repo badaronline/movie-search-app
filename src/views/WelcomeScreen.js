@@ -3,7 +3,7 @@
   welcomeScreen.classList.add("welcome-screen");
 
   const title = document.createElement("h1");
-  title.textContent = "Welcome to Movie Search App";
+  title.textContent = "Welcome to Movies Search App";
   welcomeScreen.appendChild(title);
 
   const button = document.createElement("button");

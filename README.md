@@ -1,24 +1,11 @@
-# Movie Search App
+# Movies Search App
 
-This app is a movie search and display web application that fetches movie data from The Movie Database API and displays it on a webpage.
+This amazing app is built to fetch movies data from The Movie Database API and display it on a single page application. With this app, you can search for movies by simply entering the title in the search bar.
 
-- In this, user can enter in the site to search for a movie.
-
-- The user can search for movies using a search bar. 
-
-- When the user clicks on the a movie, they can see its details, including its title, rating and overview.
-
+The app is designed to be responsive, ensuring that you get the best user experience, no matter the device you're using. You can easily browse through popular movies or sort them by top-rated and upcoming, with a simple click of a button.
 # App Demo
 
-- My web application is live on: 
-
-# Development
-
-- To run this web application locally, you will need to open index.html in your browser using a local server. LiveServer, http-server or any other local static server will work.
-
-# Installing Dependencies
-
-- There are no dependencies needed to run the website, everything is prepared to work with vanilla JavaScript.
+- https://search-movies-web.netlify.app/
 
 # Structure
 ```
@@ -48,11 +35,6 @@ index.html
   - `views` This folder typically contains JavaScript files that define the structure and logic of specific UI components or screens, such as `welcomeScreen.js`, `mainScreen.js`, and `displayMovies.js`. These files are responsible for rendering the HTML content that will be displayed to the user.
   - `utilities` This folder typically contains JavaScript files that provide common functions or utilities that are used throughout the application, such as `constants.js` for storing global constants, and `fetchMovies.js` for making API calls to retrieve movie data. 
   - `app.js` This file is typically the main entry point for the application, where the server-side and client-side code are combined and initialized.
-
-# Installing Dependencies
-
-- There are no dependencies needed to run the website, everything is prepared to work with vanilla JavaScript.
-
 ## must have features
 
 - [x] The app needs to be responsive.

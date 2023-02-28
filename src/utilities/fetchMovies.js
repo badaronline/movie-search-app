@@ -12,6 +12,6 @@ import { displayMovies } from "../views/displayMovies.js";
       } 
     catch (error) {
       console.error("Error: ", error);
-      movieBox.innerHTML = "Failed to fetch movies. Please try again.";
+      movieBox.innerHTML = (error.message);
     }
   };

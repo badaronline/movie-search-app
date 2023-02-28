@@ -6,7 +6,7 @@ export const displayMovies = (movies, element) => {
   } else {
   element.innerHTML = "";
    movies.forEach((movie) => {
-    const imagePath = movie.poster_path ? IMG_PATH + movie.poster_path : "/src/images/image-missing.png";
+    const imagePath = movie.poster_path ? IMG_PATH + movie.poster_path : "/public/images/image-missing.png";
     const box = `
       <div class="box">
         <img src="${imagePath}" alt="" />

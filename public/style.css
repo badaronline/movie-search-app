@@ -210,7 +210,8 @@ button:hover {
    width: calc(25% - 10px);
    }
    .row {
-   justify-content: space-between;
+   justify-content: flex-start;
+   align-items: flex-start;
    }
   }
 @media (max-width: 768px) {
@@ -231,8 +232,9 @@ button:hover {
     margin: 5px;
   }
   .row {
-    justify-content: space-between;
-  }
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
   .box{
     width: calc(50% - 10px);
     font-size:12px;
